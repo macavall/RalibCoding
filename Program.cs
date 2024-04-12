@@ -11,7 +11,7 @@ namespace ConsoleApp1
             // Init Raylib game window
             Raylib.InitWindow(800, 600, "Raylib C# Example");
 
-            // Set Window Background Color
+            // Set Window Background Color 
 
             // Game Loop
             while (!Raylib.WindowShouldClose())
