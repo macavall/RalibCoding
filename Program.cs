@@ -15,7 +15,7 @@ namespace ConsoleApp1
             var myColor = Color.White;
 
             // Set Window Background Color
-            Raylib.ClearBackground(Color.White);
+            Raylib.ClearBackground(myColor);
 
             // Create Button Object -> Rectangle
             Rectangle button = new Rectangle(10, 10, 100, 50);
@@ -25,7 +25,7 @@ namespace ConsoleApp1
             {
                 // Update
                 Raylib.BeginDrawing();
-                Raylib.ClearBackground(Color.White);
+                Raylib.ClearBackground(myColor);
 
                 // Button Logic
                 if (Raylib.CheckCollisionPointRec(Raylib.GetMousePosition(), button))
