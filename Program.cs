@@ -12,6 +12,7 @@ namespace ConsoleApp1
             Raylib.InitWindow(800, 600, "Raylib C# Example");
 
             bool buttonClicked = false;
+            var myColor = Color.White;
 
             // Set Window Background Color
             Raylib.ClearBackground(Color.White);
@@ -27,17 +28,11 @@ namespace ConsoleApp1
                 Raylib.ClearBackground(Color.White);
 
                 // Button Logic
-                if (
-                    Raylib.CheckCollisionPointRec(
-                        Raylib.GetMousePosition(), button)
-                    )
+                if (Raylib.CheckCollisionPointRec(Raylib.GetMousePosition(), button))
                 {
-                    if (
-                        Raylib.IsMouseButtonPressed(
-                            MouseButton.Left
-                            )
-                        )
+                    if (Raylib.IsMouseButtonPressed(MouseButton.Left))
                     {
+
                         buttonClicked = true;
                     }
                 }
