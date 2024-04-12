@@ -39,6 +39,7 @@ namespace ConsoleApp1
                     }
                 }
 
+                Raylib.DrawRectangleRec(button, Color.Gray);
 
                 Raylib.DrawText("Hello, World!", 10, 10, 20, Color.Black);
                 Raylib.EndDrawing();
