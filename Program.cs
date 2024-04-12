@@ -27,7 +27,7 @@ namespace ConsoleApp1
             // Loop through this code 10 times
             // increasing the value of i by 1 each time
             // starting at 0 and ending at 9
-            for(int i = 0; i < 10; i++)
+            for(int i = 0; i < 100; i++)
             {
                 points.Add(new Point
                 {
@@ -66,9 +66,9 @@ namespace ConsoleApp1
                 }
                 #endregion
 
-                Raylib.DrawRectangleRec(button, Color.Gray);
+                //Raylib.DrawRectangleRec(button, Color.Gray);
 
-                Raylib.DrawText("Hello, World!", 10, 10, 20, Color.Black);
+                //Raylib.DrawText("Hello, World!", 10, 10, 20, Color.Black);
                 Raylib.EndDrawing();
             }
 
