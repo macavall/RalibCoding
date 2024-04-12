@@ -28,11 +28,13 @@ namespace ConsoleApp1
                 Raylib.ClearBackground(myColor);
 
                 // Button Logic
+                // If Mouse is in button rectangle bounds is true
                 if (Raylib.CheckCollisionPointRec(Raylib.GetMousePosition(), button))
                 {
+                    // If Mouse Left Button is Pressed evaluates as true
                     if (Raylib.IsMouseButtonPressed(MouseButton.Left))
                     {
-
+                        myColor = Color.Red;
                         buttonClicked = true;
                     }
                 }
