@@ -32,6 +32,7 @@ namespace ConsoleApp1
                 points.Add(new Point
                 {
                     X = i * 10,
+                    // Starting Y at the bottom of the screen
                     Y = Raylib.GetScreenHeight() - (i * 10)
                 });
             }
