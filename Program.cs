@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Net.Http;
 using Raylib_cs;
 
@@ -20,6 +21,9 @@ namespace ConsoleApp1
             // Create Button Object -> Rectangle
             Rectangle button = new Rectangle(10, 10, 100, 50);
 
+            // Create List of plot points
+            var points = new List<List<int>>);
+
             // Game Loop
             while (!Raylib.WindowShouldClose())
             {
@@ -34,7 +38,10 @@ namespace ConsoleApp1
                     // If Mouse Left Button is Pressed evaluates as true
                     if (Raylib.IsMouseButtonPressed(MouseButton.Left))
                     {
+                        // Change Background Color
                         myColor = Color.Red;
+
+                        // Set buttonClicked to true
                         buttonClicked = true;
                     }
                 }
@@ -47,6 +54,12 @@ namespace ConsoleApp1
 
             // Close Window
             Raylib.CloseWindow();
+        }
+
+        public class Point
+        {
+            public int X { get; set; }
+            public int Y { get; set; }
         }
     }
 }
