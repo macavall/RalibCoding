@@ -43,6 +43,13 @@ namespace ConsoleApp1
                 Raylib.BeginDrawing();
                 Raylib.ClearBackground(myColor);
 
+                // Draw Points
+                foreach (var point in points)
+                {
+                    Raylib.DrawCircle(point.X, point.Y, 5, Color.Black);
+                }
+
+                #region
                 // Button Logic
                 // If Mouse is in button rectangle bounds is true
                 if (Raylib.CheckCollisionPointRec(Raylib.GetMousePosition(), button))
@@ -57,6 +64,7 @@ namespace ConsoleApp1
                         buttonClicked = true;
                     }
                 }
+                #endregion
 
                 Raylib.DrawRectangleRec(button, Color.Gray);
 
