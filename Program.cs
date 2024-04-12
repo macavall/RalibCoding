@@ -22,7 +22,18 @@ namespace ConsoleApp1
             Rectangle button = new Rectangle(10, 10, 100, 50);
 
             // Create List of plot points
-            var points = new List<List<int>>);
+            var points = new List<Point>();
+
+            // Loop through this code 10 times
+            // increasing the value of i by 1 each time
+            // starting at 0 and ending at 9
+            for(int i = 0; i < 10; i++)
+            {
+                points.Add(new Point
+                {
+
+                });
+            }
 
             // Game Loop
             while (!Raylib.WindowShouldClose())
