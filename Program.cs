@@ -11,7 +11,13 @@ namespace ConsoleApp1
             // Init Raylib game window
             Raylib.InitWindow(800, 600, "Raylib C# Example");
 
-            // Set Window Background Color 
+            bool buttonClicked = false;
+
+            // Set Window Background Color
+            Raylib.ClearBackground(Color.White);
+
+            // Create Button Object -> Rectangle
+            Rectangle button = new Rectangle(10, 10, 100, 50);
 
             // Game Loop
             while (!Raylib.WindowShouldClose())
