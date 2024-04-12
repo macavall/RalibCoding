@@ -25,6 +25,24 @@ namespace ConsoleApp1
                 // Update
                 Raylib.BeginDrawing();
                 Raylib.ClearBackground(Color.White);
+
+                // Button Logic
+                if (
+                    Raylib.CheckCollisionPointRec(
+                        Raylib.GetMousePosition(), button)
+                    )
+                {
+                    if (
+                        Raylib.IsMouseButtonPressed(
+                            MouseButton.Left
+                            )
+                        )
+                    {
+                        buttonClicked = true;
+                    }
+                }
+
+
                 Raylib.DrawText("Hello, World!", 10, 10, 20, Color.Black);
                 Raylib.EndDrawing();
             }
